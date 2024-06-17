@@ -1,0 +1,22 @@
+.ingredient {
+  width: 370px;
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+input {
+  width: 70px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonDiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,11 @@
+.column {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.part {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
