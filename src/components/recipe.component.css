@@ -1,6 +1,5 @@
 .body {
   margin-top: 20px;
-  background-color: #dcdcdc;
   padding-bottom: 40px;
   margin-left: 40px;
   margin-right: 40px;
@@ -9,29 +8,21 @@
 }
 
 .backGround {
-  background-image: url("../background1.jpg");
   height: 100vh;
   min-height: 800px;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  vertical-align: bottom;
-  background-color: white;
+  display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
+  background-image: url("../background1.jpg");
+  height: 600px;
+  width: 100%;
 }
 
 .h1 {
   font-size: 50px;
   font-weight: 600;
-}
-
-.imageDiv {
-  position: relative;
-  height: 89px;
-  top: 40px;
-  left: 20px;
 }
 
 h2 {
@@ -40,4 +31,50 @@ h2 {
 
 h3 {
   font-weight: 600;
+}
+
+.flavor,
+.driven {
+  color: white;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
+  text-align: center;
+}
+.driven {
+  font-weight: 600;
+  margin-top: -45px;
+}
+
+.slogan {
+  width: 130px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  width: 98vw;
+  height: 250px;
+  align-items: center;
+}
+
+.orderNow {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.downArrow {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.goToBake {
+  margin-top: 60px;
+}
+
+.orderNow:hover,
+.downArrow:hover {
+  cursor: pointer;
 }

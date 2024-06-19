@@ -5,6 +5,10 @@ import { ApolloProvider } from "@apollo/client";
 import client from "../Client/apollo-client";
 import { MakeCake } from "../models/models";
 import "./recipe.component.css";
+import SupBar from "./main/supbar.component";
+import Bar from "./main/bar.component";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Recipe: React.FC = () => {
   const [result, setRessult] = useState<MakeCake>({
@@ -17,15 +21,20 @@ const Recipe: React.FC = () => {
 
   return (
     <div className="backGround">
+      <SupBar />
       <head className="header">
-        <h1 className="h1">Bem-vindo à </h1>
-        <div className="imageDiv">
-          <img
-            src="cake-solutions.png"
-            width={217}
-            height={89}
-            alt="Cake Solutions Logo"
-          />
+        <Bar />
+        <div className="slogan">
+          <div>
+            <h1 className="flavor">Flavor</h1>
+            <h1 className="driven">Driven</h1>
+          </div>
+        </div>
+        <div className="goToBake">
+          <div className="orderNow">P A D A R I A</div>
+          <div className="downArrow">
+            <FontAwesomeIcon icon={faAngleDown} />
+          </div>
         </div>
       </head>
       <body className="body">
