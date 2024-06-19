@@ -22,7 +22,7 @@ const Filling: React.FC<FillingComponentProps> = ({ setValue }) => {
 
   return (
     <form>
-      <h3>Recheio</h3>
+      <h3 className="subtitle">Recheio</h3>
       <IngredientInput label="Chocolate (g)" setValueFunction={setChocolate} />
       <IngredientInput
         label="Leite Condensado (lata)"

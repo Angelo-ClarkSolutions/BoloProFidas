@@ -9,7 +9,7 @@ const FrostingResult: React.FC<FrostingResultProps> = ({ frosting }) => {
 
   return (
     <div>
-      <h3>Cobertura</h3>
+      <h3 className="subtitle">Cobertura</h3>
       <Part label="Calorias" value={frosting?.calories} />
       <Part label="Sabor" value={frosting?.flavor} />
       <Part label="Cor" value={frosting?.color} />

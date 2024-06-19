@@ -19,7 +19,7 @@ const Frosting: React.FC<FrostingComponentProps> = ({ setValue }) => {
 
   return (
     <form>
-      <h3>Cobertura</h3>
+      <h3 className="subtitle">Cobertura</h3>
       <IngredientInput label="Chocolate (g)" setValueFunction={setChocolate} />
       <IngredientInput
         label="Leite Condensado (lata)"

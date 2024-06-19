@@ -9,7 +9,7 @@ const FillingResult: React.FC<FillingResultProps> = ({ filling }) => {
 
   return (
     <div>
-      <h3>Recheio</h3>
+      <h3 className="subtitle">Recheio</h3>
       <Part label="Calorias" value={filling?.calories} />
       <Part label="Sabor" value={filling?.flavor} />
       <Part label="Cor" value={filling?.color} />
