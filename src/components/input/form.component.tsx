@@ -47,6 +47,7 @@ const CakeForm: React.FC<CakeFormProps> = ({ update }) => {
 
   return (
     <div>
+      <h2>Ingredientes</h2>
       <div className="columns">
         <Batter setValue={setBatterInput} />
         <div>

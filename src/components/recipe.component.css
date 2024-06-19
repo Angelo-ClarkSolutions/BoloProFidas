@@ -4,12 +4,14 @@
   padding-bottom: 40px;
   margin-left: 40px;
   margin-right: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
 }
 
 .backGround {
   background-image: url("../background1.jpg");
   height: 100vh;
-  min-height: 750px;
+  min-height: 800px;
 }
 
 .header {
@@ -17,10 +19,12 @@
   justify-content: center;
   vertical-align: bottom;
   background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .h1 {
   font-size: 50px;
+  font-weight: 600;
 }
 
 .imageDiv {
@@ -28,4 +32,12 @@
   height: 89px;
   top: 40px;
   left: 20px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
 }
