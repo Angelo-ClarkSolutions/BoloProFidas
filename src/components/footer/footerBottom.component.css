@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+.socialMediaContainer {
+  display: inline;
+  align-self: center;
+  margin-right: 80px;
+  margin-left: auto;
+}
+
+.socialMediaLogo {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+.socialMediaLogo:hover {
+  background-color: white;
+  color: #388a4c;
+}
