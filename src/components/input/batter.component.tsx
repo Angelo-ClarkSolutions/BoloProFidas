@@ -35,7 +35,7 @@ const Batter: React.FC<BatterComponentProps> = ({ setValue }) => {
 
   return (
     <form>
-      <h3>Massa</h3>
+      <h3 className="subtitle">Massa</h3>
       <IngredientInput
         label="Farinha de Trigo (copos)"
         setValueFunction={setWheatFlour}

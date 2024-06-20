@@ -3,9 +3,27 @@
   justify-content: space-evenly;
 }
 
+.title {
+  margin-top: 85px;
+  margin-left: 5vw;
+  font-size: 40px;
+  color: #213258;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 23px;
+  color: #414141b0;
+  font-weight: 400;
+}
+
 .part {
   width: 200px;
+  font-size: medium;
+  font-weight: 300;
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 10px;
+  color: #666666;
+  margin-left: 10px;
 }

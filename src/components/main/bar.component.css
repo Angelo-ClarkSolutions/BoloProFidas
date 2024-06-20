@@ -1,0 +1,7 @@
+.bar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  background-image: linear-gradient(to top, transparent, black);
+  justify-content: space-between;
+}

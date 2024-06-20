@@ -11,7 +11,9 @@ const Result: React.FC<ResultProps> = ({ cake }) => {
   }
   return (
     <div>
-      <h2>Resultado</h2>
+      <h2 className="title">
+        <span>Resultado</span>
+      </h2>
       <div className="column">
         <CakeResult batterResult={cake?.data.makeCake?.cookedBatter} />
         <FillingResult filling={cake?.data.makeCake?.filling} />

@@ -47,7 +47,9 @@ const CakeForm: React.FC<CakeFormProps> = ({ update }) => {
 
   return (
     <div>
-      <h2>Ingredientes</h2>
+      <h2 className="title">
+        Monte seu <span>Bolo</span>
+      </h2>
       <div className="columns">
         <Batter setValue={setBatterInput} />
         <div>
@@ -56,7 +58,9 @@ const CakeForm: React.FC<CakeFormProps> = ({ update }) => {
         </div>
       </div>
       <div className="buttonDiv">
-        <button onClick={onSubmit}>Fazer Bolo</button>
+        <p className="submitButton" onClick={onSubmit}>
+          Fazer Bolo
+        </p>
       </div>
     </div>
   );

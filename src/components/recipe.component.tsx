@@ -5,6 +5,9 @@ import { ApolloProvider } from "@apollo/client";
 import client from "../Client/apollo-client";
 import { MakeCake } from "../models/models";
 import "./recipe.component.css";
+import SupBar from "./main/supbar.component";
+import Header from "./header/header.component";
+import Footer from "./footer/footer.component";
 
 const Recipe: React.FC = () => {
   const [result, setRessult] = useState<MakeCake>({
@@ -17,23 +20,15 @@ const Recipe: React.FC = () => {
 
   return (
     <div className="backGround">
-      <head className="header">
-        <h1 className="h1">Bem-vindo à </h1>
-        <div className="imageDiv">
-          <img
-            src="cake-solutions.png"
-            width={217}
-            height={89}
-            alt="Cake Solutions Logo"
-          />
-        </div>
-      </head>
-      <body className="body">
+      <SupBar />
+      <Header />
+      <body className="body" id="body-content">
         <ApolloProvider client={client}>
           <CakeForm update={setRessult} />
           <Result cake={result} />
         </ApolloProvider>
       </body>
+      <Footer />
     </div>
   );
 };
