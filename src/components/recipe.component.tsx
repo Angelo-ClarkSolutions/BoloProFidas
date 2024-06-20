@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CakeForm from "./input/form.component";
 import Result from "./result/result.component";
 import { ApolloProvider } from "@apollo/client";
@@ -9,6 +9,7 @@ import SupBar from "./main/supbar.component";
 import Bar from "./main/bar.component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import ImageSlider from "./background.component";
 
 const Recipe: React.FC = () => {
   const [result, setRessult] = useState<MakeCake>({
@@ -23,6 +24,7 @@ const Recipe: React.FC = () => {
     <div className="backGround">
       <SupBar />
       <head className="header">
+        <ImageSlider />
         <Bar />
         <div className="slogan">
           <div>

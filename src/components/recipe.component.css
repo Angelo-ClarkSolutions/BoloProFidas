@@ -7,17 +7,24 @@
   font-weight: 400;
 }
 
-.backGround {
-  height: 100vh;
-  min-height: 800px;
-}
-
 .header {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
-  background-image: url("../background1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 800px;
   height: 600px;
   width: 100%;
+  transition: "background-image 0.5s ease-in-out";
+  position: relative;
+  overflow: hidden;
+}
+.header > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the carousel to the background */
 }
 
 .h1 {
@@ -51,9 +58,11 @@ h3 {
   margin-top: 70px;
   display: flex;
   justify-content: center;
-  width: 98vw;
+  width: 99.3vw;
   height: 250px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .orderNow {
@@ -77,4 +86,38 @@ h3 {
 .orderNow:hover,
 .downArrow:hover {
   cursor: pointer;
+}
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Position the ImageSlider absolutely */
+.background-container > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the carousel to the background */
+}
+
+/* Content on top of the carousel background */
+.content {
+  position: relative;
+  z-index: 1; /* Bring content above the background */
+  color: white; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+}
+
+@media (min-width: 1500px) {
+  .header {
+    height: 800px;
+  }
+  .slogan {
+    margin-top: 270px;
+    text-align: center;
+  }
 }
