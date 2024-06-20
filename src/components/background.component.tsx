@@ -3,7 +3,6 @@ import image1 from "../suenho.png";
 import image2 from "../boludo2.png";
 import image3 from "../canolli.png";
 import "./background.component.css";
-import Bar from "./main/bar.component";
 
 const images = [image1, image2, image3];
 const delay = 2500;
