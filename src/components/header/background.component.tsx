@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import image1 from "../suenho.png";
-import image2 from "../boludo2.png";
-import image3 from "../canolli.png";
+import image1 from "../../suenho.png";
+import image2 from "../../boludo2.png";
+import image3 from "../../canolli.png";
 import "./background.component.css";
 
 const images = [image1, image2, image3];
@@ -55,7 +55,6 @@ const ImageSlider: React.FC = () => {
               style={{ backgroundImage: `url(${backgroundImage})` }}
             ></div>
           ))}
-          {/* Cloned first image */}
           <div
             className="slide"
             style={{ backgroundImage: `url(${images[0]})` }}

@@ -1,0 +1,114 @@
+.header {
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100% 800px;
+  height: 600px;
+  width: 100%;
+  transition: "background-image 0.5s ease-in-out";
+  position: relative;
+  overflow: hidden;
+}
+.header > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the carousel to the background */
+}
+
+.flavor,
+.driven {
+  color: white;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 45px;
+  text-align: center;
+}
+.driven {
+  font-weight: 600;
+  margin-top: -45px;
+}
+
+.slogan {
+  width: 130px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  width: 99.3vw;
+  height: 250px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.orderNow {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.downArrow {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.goToBake {
+  margin-top: 60px;
+}
+
+.bakery:hover,
+.arrow:hover {
+  cursor: pointer;
+}
+
+.bakery {
+  width: 80px;
+}
+
+.arrow {
+  width: 50px;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Position the ImageSlider absolutely */
+.background-container > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send the carousel to the background */
+}
+
+/* Content on top of the carousel background */
+.content {
+  position: relative;
+  z-index: 1; /* Bring content above the background */
+  color: white; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+}
+
+@media (min-width: 1500px) {
+  .header {
+    height: 800px;
+  }
+  .slogan {
+    margin-top: 270px;
+    text-align: center;
+  }
+}
