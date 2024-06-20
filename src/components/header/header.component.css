@@ -33,7 +33,7 @@
 
 .slogan {
   width: 130px;
-  margin-top: 70px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   width: 99.3vw;
@@ -108,7 +108,7 @@
     height: 800px;
   }
   .slogan {
-    margin-top: 270px;
+    margin-top: 250px;
     text-align: center;
   }
 }
