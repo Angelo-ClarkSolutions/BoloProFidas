@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .body {
   margin-top: 20px;
   padding-bottom: 40px;
@@ -70,6 +73,8 @@ h3 {
   text-align: center;
   font-size: 13px;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 
 .downArrow {
@@ -77,16 +82,27 @@ h3 {
   text-align: center;
   font-size: 40px;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .goToBake {
   margin-top: 60px;
 }
 
-.orderNow:hover,
-.downArrow:hover {
+.bakery:hover,
+.arrow:hover {
   cursor: pointer;
 }
+
+.bakery {
+  width: 80px;
+}
+
+.arrow {
+  width: 50px;
+}
+
 .background-container {
   position: relative;
   width: 100%;

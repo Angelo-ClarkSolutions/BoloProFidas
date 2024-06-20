@@ -53,4 +53,9 @@ span {
   border-radius: 5px;
   text-transform: uppercase;
   font-size: 17px;
+  transition: all 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #30a44c;
 }

@@ -20,6 +20,10 @@ const Recipe: React.FC = () => {
     },
   });
 
+  const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="backGround">
       <SupBar />
@@ -33,13 +37,25 @@ const Recipe: React.FC = () => {
           </div>
         </div>
         <div className="goToBake">
-          <div className="orderNow">P A D A R I A</div>
-          <div className="downArrow">
-            <FontAwesomeIcon icon={faAngleDown} />
+          <div className="orderNow">
+            <div
+              onClick={() => scrollToSection("body-content")}
+              className="bakery"
+            >
+              P A D A R I A
+            </div>
+          </div>
+          <div
+            className="downArrow"
+            onClick={() => scrollToSection("body-content")}
+          >
+            <div className="arrow">
+              <FontAwesomeIcon icon={faAngleDown} />
+            </div>
           </div>
         </div>
       </head>
-      <body className="body">
+      <body className="body" id="body-content">
         <ApolloProvider client={client}>
           <CakeForm update={setRessult} />
           <Result cake={result} />
