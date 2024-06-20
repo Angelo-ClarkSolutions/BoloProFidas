@@ -24,22 +24,8 @@ input {
   justify-content: space-evenly;
 }
 
-.title {
-  margin-top: 85px;
-  margin-left: 5vw;
-  font-size: 40px;
-  color: #213258;
-  font-weight: 400;
-}
-
 span {
   font-weight: 600;
-}
-
-.subtitle {
-  font-size: 23px;
-  color: #414141b0;
-  font-weight: 400;
 }
 
 .submitButton {
