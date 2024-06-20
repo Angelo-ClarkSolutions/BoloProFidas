@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./logo.component";
-import MainBar from "./mainBar.component";
 import "./bar.component.css";
+import HoverMenu from "./hovermenu.component";
 
 const Bar: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Bar: React.FC = () => {
         <Logo />
       </div>
       <div className="barMainBarDiv">
-        <MainBar />
+        <HoverMenu />
       </div>
     </div>
   );

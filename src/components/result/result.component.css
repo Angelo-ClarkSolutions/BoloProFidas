@@ -4,7 +4,7 @@
 }
 
 .title {
-  margin-top: 85px;
+  margin-top: 8px;
   margin-left: 5vw;
   font-size: 40px;
   color: #213258;
@@ -26,4 +26,10 @@
   margin-top: 10px;
   color: #666666;
   margin-left: 10px;
+}
+
+@media (min-width: 1500px) {
+  .title {
+    margin-top: 85px;
+  }
 }

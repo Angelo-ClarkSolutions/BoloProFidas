@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         <FooterBottom />
         <div className="spacing">
           <p id="copyright">
-            © 2024 Cake Solutions. All rights reserved. Criação de sites:
+            © 2024 Cake Solutions. No rights reserved. Criação do site:
             Angelindo
           </p>
         </div>
